@@ -1,0 +1,295 @@
+2023-03-13T14:34:22.326+0000 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2023-03-13T14:34:22.826+0000 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2023-03-13T14:34:22.828+0000 I  CONTROL  [initandlisten] MongoDB starting : pid=12404 port=27022 dbpath=\data\rs2 64-bit host=DESKTOP-9V258QU
+2023-03-13T14:34:22.828+0000 I  CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2023-03-13T14:34:22.828+0000 I  CONTROL  [initandlisten] db version v4.2.24
+2023-03-13T14:34:22.828+0000 I  CONTROL  [initandlisten] git version: 5e4ec1d24431fcdd28b579a024c5c801b8cde4e2
+2023-03-13T14:34:22.828+0000 I  CONTROL  [initandlisten] allocator: tcmalloc
+2023-03-13T14:34:22.836+0000 I  CONTROL  [initandlisten] modules: none
+2023-03-13T14:34:22.836+0000 I  CONTROL  [initandlisten] build environment:
+2023-03-13T14:34:22.836+0000 I  CONTROL  [initandlisten]     distmod: 2012plus
+2023-03-13T14:34:22.837+0000 I  CONTROL  [initandlisten]     distarch: x86_64
+2023-03-13T14:34:22.837+0000 I  CONTROL  [initandlisten]     target_arch: x86_64
+2023-03-13T14:34:22.837+0000 I  CONTROL  [initandlisten] options: { net: { port: 27022 }, replication: { replSet: "myRepl" }, sharding: { clusterRole: "configsvr" }, storage: { dbPath: "\data\rs2" }, systemLog: { destination: "file", path: "\data\rs2\2.log" } }
+2023-03-13T14:34:22.840+0000 I  STORAGE  [initandlisten] Detected data files in \data\rs2 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2023-03-13T14:34:22.840+0000 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3528M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2023-03-13T14:34:22.886+0000 I  STORAGE  [initandlisten] WiredTiger message [1678718062:885429][12404:140725933595440], txn-recover: Recovering log 1 through 2
+2023-03-13T14:34:22.976+0000 I  STORAGE  [initandlisten] WiredTiger message [1678718062:976280][12404:140725933595440], txn-recover: Recovering log 2 through 2
+2023-03-13T14:34:23.068+0000 I  STORAGE  [initandlisten] WiredTiger message [1678718063:67941][12404:140725933595440], txn-recover: Main recovery loop: starting at 1/288128 to 2/256
+2023-03-13T14:34:23.069+0000 I  STORAGE  [initandlisten] WiredTiger message [1678718063:69553][12404:140725933595440], txn-recover: Recovering log 1 through 2
+2023-03-13T14:34:23.167+0000 I  STORAGE  [initandlisten] WiredTiger message [1678718063:167827][12404:140725933595440], txn-recover: Recovering log 2 through 2
+2023-03-13T14:34:23.246+0000 I  STORAGE  [initandlisten] WiredTiger message [1678718063:246440][12404:140725933595440], txn-recover: Set global recovery timestamp: (1678717460, 2)
+2023-03-13T14:34:23.269+0000 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(1678717460, 2)
+2023-03-13T14:34:23.281+0000 I  STORAGE  [initandlisten] Starting OplogTruncaterThread local.oplog.rs
+2023-03-13T14:34:23.281+0000 I  STORAGE  [initandlisten] The size storer reports that the oplog contains 212 records totaling to 37470 bytes
+2023-03-13T14:34:23.281+0000 I  STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2023-03-13T14:34:23.283+0000 I  STORAGE  [initandlisten] WiredTiger record store oplog processing took 1ms
+2023-03-13T14:34:23.286+0000 I  STORAGE  [initandlisten] Timestamp monitor starting
+2023-03-13T14:34:23.290+0000 I  CONTROL  [initandlisten] 
+2023-03-13T14:34:23.290+0000 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2023-03-13T14:34:23.290+0000 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2023-03-13T14:34:23.291+0000 I  CONTROL  [initandlisten] 
+2023-03-13T14:34:23.291+0000 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2023-03-13T14:34:23.291+0000 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2023-03-13T14:34:23.291+0000 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2023-03-13T14:34:23.291+0000 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2023-03-13T14:34:23.291+0000 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2023-03-13T14:34:23.291+0000 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2023-03-13T14:34:23.291+0000 I  CONTROL  [initandlisten] 
+2023-03-13T14:34:23.311+0000 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2023-03-13T14:34:24.059+0000 W  FTDC     [initandlisten] Failed to initialize Performance Counters for FTDC: WindowsPdhError: PdhExpandCounterPathW failed with 'Lâ€™objet spÃ©cifiÃ© nâ€™a pas Ã©tÃ© trouvÃ© sur lâ€™ordinateur.' for counter '\Processor(_Total)\% Idle Time'
+2023-03-13T14:34:24.059+0000 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/rs2/diagnostic.data'
+2023-03-13T14:34:24.062+0000 I  SHARDING [thread1] creating distributed lock ping thread for process ConfigServer (sleeping for 30000ms)
+2023-03-13T14:34:24.062+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: ReadConcernMajorityNotAvailableYet: could not get updated shard list from config server :: caused by :: Read concern majority reads are currently not possible.; will retry after 30s
+2023-03-13T14:34:24.067+0000 I  REPL     [initandlisten] Rollback ID is 1
+2023-03-13T14:34:24.069+0000 I  REPL     [initandlisten] Recovering from stable timestamp: Timestamp(1678717460, 2) (top of oplog: { ts: Timestamp(1678717460, 2), t: 2 }, appliedThrough: { ts: Timestamp(0, 0), t: -1 }, TruncateAfter: Timestamp(0, 0))
+2023-03-13T14:34:24.069+0000 I  REPL     [initandlisten] Starting recovery oplog application at the stable timestamp: Timestamp(1678717460, 2)
+2023-03-13T14:34:24.069+0000 I  REPL     [initandlisten] No oplog entries to apply for recovery. Start point is at the top of the oplog.
+2023-03-13T14:34:24.073+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-0] Refresh for database config from version {} to version { uuid: UUID("3d1279e3-56d7-4d55-b77e-63997df8d3b9"), lastMod: 0 } took 0 ms
+2023-03-13T14:34:24.073+0000 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-13T14:34:24.073+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Read concern majority reads are currently not possible.
+2023-03-13T14:34:24.074+0000 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-13T14:34:24.074+0000 I  NETWORK  [listener] Listening on 127.0.0.1
+2023-03-13T14:34:24.074+0000 I  NETWORK  [listener] waiting for connections on port 27022
+2023-03-13T14:34:24.513+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60774 #2 (1 connection now open)
+2023-03-13T14:34:24.515+0000 I  NETWORK  [conn2] received client metadata from 127.0.0.1:60774 conn2: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:34:26.132+0000 I  REPL     [replexec-0] New replica set config in use: { _id: "myRepl", version: 2, configsvr: true, protocolVersion: 1, writeConcernMajorityJournalDefault: true, members: [ { _id: 0, host: "localhost:27021", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 2.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27022", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27023", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('640f2d7dd54f47b778949376') } }
+2023-03-13T14:34:26.133+0000 I  REPL     [replexec-0] This node is localhost:27022 in the config
+2023-03-13T14:34:26.133+0000 I  REPL     [replexec-0] transition to STARTUP2 from STARTUP
+2023-03-13T14:34:26.135+0000 I  REPL     [replexec-0] Starting replication storage threads
+2023-03-13T14:34:26.135+0000 I  CONNPOOL [Replication] Connecting to localhost:27023
+2023-03-13T14:34:26.137+0000 I  CONNPOOL [Replication] Connecting to localhost:27021
+2023-03-13T14:34:26.138+0000 I  REPL     [replexec-0] transition to RECOVERING from STARTUP2
+2023-03-13T14:34:26.138+0000 I  REPL     [replexec-0] Starting replication fetcher thread
+2023-03-13T14:34:26.139+0000 I  REPL     [replexec-0] Starting replication applier thread
+2023-03-13T14:34:26.139+0000 I  REPL     [replexec-0] Starting replication reporter thread
+2023-03-13T14:34:26.139+0000 I  REPL     [rsSync-0] Starting oplog application
+2023-03-13T14:34:26.140+0000 I  REPL     [rsBackgroundSync] waiting for 4 pings from other members before syncing
+2023-03-13T14:34:26.142+0000 I  REPL     [rsSync-0] transition to SECONDARY from RECOVERING
+2023-03-13T14:34:26.142+0000 I  REPL     [rsSync-0] Resetting sync source to empty, which was :27017
+2023-03-13T14:34:26.146+0000 I  REPL     [replexec-2] Member localhost:27021 is now in state SECONDARY
+2023-03-13T14:34:28.164+0000 I  CONNPOOL [Replication] Connecting to localhost:27023
+2023-03-13T14:34:28.338+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60882 #4 (2 connections now open)
+2023-03-13T14:34:28.339+0000 I  NETWORK  [conn4] received client metadata from 127.0.0.1:60882 conn4: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:34:28.347+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60883 #5 (3 connections now open)
+2023-03-13T14:34:28.348+0000 I  NETWORK  [conn5] received client metadata from 127.0.0.1:60883 conn5: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:34:30.199+0000 I  CONNPOOL [Replication] Connecting to localhost:27023
+2023-03-13T14:34:32.240+0000 I  REPL_HB  [replexec-0] Heartbeat to localhost:27023 failed after 2 retries, response status: HostUnreachable: Error connecting to localhost:27023 (127.0.0.1:27023) :: caused by :: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+2023-03-13T14:34:32.240+0000 I  REPL     [replexec-0] Member localhost:27023 is now in state RS_DOWN - Error connecting to localhost:27023 (127.0.0.1:27023) :: caused by :: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+2023-03-13T14:34:32.740+0000 I  CONNPOOL [Replication] Connecting to localhost:27023
+2023-03-13T14:34:34.767+0000 I  CONNPOOL [Replication] Connecting to localhost:27023
+2023-03-13T14:34:36.249+0000 I  ELECTION [replexec-2] Starting an election, since we've seen no PRIMARY in the past 10000ms
+2023-03-13T14:34:36.249+0000 I  ELECTION [replexec-2] conducting a dry run election to see if we could be elected. current term: 2
+2023-03-13T14:34:36.249+0000 I  REPL     [replexec-2] Scheduling remote command request for vote request: RemoteCommand 27 -- target:localhost:27021 db:admin cmd:{ replSetRequestVotes: 1, setName: "myRepl", dryRun: true, term: 2, candidateIndex: 1, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678717460, 2), t: 2 } }
+2023-03-13T14:34:36.249+0000 I  REPL     [replexec-2] Scheduling remote command request for vote request: RemoteCommand 28 -- target:localhost:27023 db:admin cmd:{ replSetRequestVotes: 1, setName: "myRepl", dryRun: true, term: 2, candidateIndex: 1, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678717460, 2), t: 2 } }
+2023-03-13T14:34:36.249+0000 I  CONNPOOL [Replication] Connecting to localhost:27023
+2023-03-13T14:34:36.250+0000 I  ELECTION [replexec-0] VoteRequester(term 2 dry run) received a yes vote from localhost:27021; response message: { term: 2, voteGranted: true, reason: "", ok: 1.0, $gleStats: { lastOpTime: Timestamp(0, 0), electionId: ObjectId('000000000000000000000000') }, lastCommittedOpTime: Timestamp(0, 0), $clusterTime: { clusterTime: Timestamp(1678717460, 2), signature: { hash: BinData(0, 0000000000000000000000000000000000000000), keyId: 0 } }, operationTime: Timestamp(1678717460, 2) }
+2023-03-13T14:34:36.250+0000 I  ELECTION [replexec-2] dry election run succeeded, running for election in term 3
+2023-03-13T14:34:36.260+0000 I  REPL     [replexec-2] Scheduling remote command request for vote request: RemoteCommand 29 -- target:localhost:27021 db:admin cmd:{ replSetRequestVotes: 1, setName: "myRepl", dryRun: false, term: 3, candidateIndex: 1, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678717460, 2), t: 2 } }
+2023-03-13T14:34:36.260+0000 I  REPL     [replexec-2] Scheduling remote command request for vote request: RemoteCommand 30 -- target:localhost:27023 db:admin cmd:{ replSetRequestVotes: 1, setName: "myRepl", dryRun: false, term: 3, candidateIndex: 1, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678717460, 2), t: 2 } }
+2023-03-13T14:34:36.263+0000 I  ELECTION [replexec-0] VoteRequester(term 3) received a yes vote from localhost:27021; response message: { term: 3, voteGranted: true, reason: "", ok: 1.0, $gleStats: { lastOpTime: Timestamp(0, 0), electionId: ObjectId('000000000000000000000000') }, lastCommittedOpTime: Timestamp(0, 0), $clusterTime: { clusterTime: Timestamp(1678717460, 2), signature: { hash: BinData(0, 0000000000000000000000000000000000000000), keyId: 0 } }, operationTime: Timestamp(1678717460, 2) }
+2023-03-13T14:34:36.263+0000 I  ELECTION [replexec-0] election succeeded, assuming primary role in term 3
+2023-03-13T14:34:36.263+0000 I  REPL     [replexec-0] transition to PRIMARY from SECONDARY
+2023-03-13T14:34:36.263+0000 I  REPL     [replexec-0] Resetting sync source to empty, which was :27017
+2023-03-13T14:34:36.264+0000 I  REPL     [replexec-0] Entering primary catch-up mode.
+2023-03-13T14:34:36.549+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60892 #6 (4 connections now open)
+2023-03-13T14:34:36.550+0000 I  NETWORK  [conn6] end connection 127.0.0.1:60892 (3 connections now open)
+2023-03-13T14:34:36.559+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60894 #7 (4 connections now open)
+2023-03-13T14:34:36.560+0000 I  NETWORK  [conn7] received client metadata from 127.0.0.1:60894 conn7: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:34:36.771+0000 I  REPL     [replexec-0] Member localhost:27023 is now in state SECONDARY
+2023-03-13T14:34:36.771+0000 I  REPL     [replexec-0] Caught up to the latest optime known via heartbeats after becoming primary. Target optime: { ts: Timestamp(1678717460, 2), t: 2 }. My Last Applied: { ts: Timestamp(1678717460, 2), t: 2 }
+2023-03-13T14:34:36.771+0000 I  REPL     [replexec-0] Exited primary catch-up mode.
+2023-03-13T14:34:36.771+0000 I  REPL     [replexec-0] Stopping replication producer
+2023-03-13T14:34:36.772+0000 I  REPL     [ReplBatcher] Oplog buffer has been drained in term 3
+2023-03-13T14:34:36.773+0000 I  REPL     [RstlKillOpThread] Starting to kill user operations
+2023-03-13T14:34:36.773+0000 I  REPL     [RstlKillOpThread] Stopped killing user operations
+2023-03-13T14:34:36.774+0000 I  REPL     [RstlKillOpThread] State transition ops metrics: { lastStateTransition: "stepUp", userOpsKilled: 0, userOpsRunning: 0 }
+2023-03-13T14:34:36.791+0000 I  SHARDING [Balancer] CSRS balancer is starting
+2023-03-13T14:34:36.791+0000 W  SHARDING [Balancer] Balancer settings could not be loaded and will be retried in 10 seconds :: caused by :: ReadConcernMajorityNotAvailableYet: Failed to refresh the balancer settings :: caused by :: Read concern majority reads are currently not possible.
+2023-03-13T14:34:36.791+0000 I  SHARDING [PeriodicShardedIndexConsistencyChecker] Checking consistency of sharded collection indexes across the cluster
+2023-03-13T14:34:36.792+0000 I  REPL     [rsSync-0] transition to primary complete; database writes are now permitted
+2023-03-13T14:34:36.794+0000 I  SHARDING [PeriodicShardedIndexConsistencyChecker] Found 0 collections with inconsistent indexes
+2023-03-13T14:34:37.377+0000 I  TXN      [TransactionCoordinator] Need to resume coordinating commit for 0 transactions
+2023-03-13T14:34:37.377+0000 I  TXN      [TransactionCoordinator] Incoming coordinateCommit requests are now enabled
+2023-03-13T14:34:37.565+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60896 #11 (5 connections now open)
+2023-03-13T14:34:37.567+0000 I  NETWORK  [conn11] received client metadata from 127.0.0.1:60896 conn11: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:34:37.575+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60897 #12 (6 connections now open)
+2023-03-13T14:34:37.576+0000 I  NETWORK  [conn12] received client metadata from 127.0.0.1:60897 conn12: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:34:46.793+0000 I  SHARDING [Balancer] CSRS balancer thread is recovering
+2023-03-13T14:34:46.793+0000 I  SHARDING [Balancer] CSRS balancer thread is recovered
+2023-03-13T14:34:47.678+0000 I  ELECTION [conn2] Received vote request: { replSetRequestVotes: 1, setName: "myRepl", dryRun: true, term: 3, candidateIndex: 0, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678718086, 1), t: 3 } }
+2023-03-13T14:34:47.678+0000 I  ELECTION [conn2] Sending vote response: { term: 3, voteGranted: true, reason: "" }
+2023-03-13T14:34:47.691+0000 I  REPL     [conn2] stepping down from primary, because a new term has begun: 4
+2023-03-13T14:34:47.692+0000 I  REPL     [RstlKillOpThread] Starting to kill user operations
+2023-03-13T14:34:47.692+0000 I  REPL     [RstlKillOpThread] Stopped killing user operations
+2023-03-13T14:34:47.692+0000 I  REPL     [RstlKillOpThread] State transition ops metrics: { lastStateTransition: "stepDown", userOpsKilled: 0, userOpsRunning: 3 }
+2023-03-13T14:34:47.693+0000 I  REPL     [replexec-2] transition to SECONDARY from PRIMARY
+2023-03-13T14:34:47.694+0000 I  SHARDING [Balancer] CSRS balancer is now stopped
+2023-03-13T14:34:47.695+0000 I  ELECTION [conn2] Received vote request: { replSetRequestVotes: 1, setName: "myRepl", dryRun: false, term: 4, candidateIndex: 0, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678718086, 1), t: 3 } }
+2023-03-13T14:34:47.695+0000 I  ELECTION [conn2] Sending vote response: { term: 4, voteGranted: true, reason: "" }
+2023-03-13T14:34:47.699+0000 I  NETWORK  [conn2] end connection 127.0.0.1:60774 (5 connections now open)
+2023-03-13T14:34:47.701+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60898 #13 (6 connections now open)
+2023-03-13T14:34:47.702+0000 I  NETWORK  [conn13] received client metadata from 127.0.0.1:60898 conn13: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:34:48.274+0000 I  REPL     [replexec-5] Member localhost:27021 is now in state PRIMARY
+2023-03-13T14:34:48.697+0000 I  REPL     [rsBackgroundSync] sync source candidate: localhost:27021
+2023-03-13T14:34:48.698+0000 I  CONNPOOL [RS] Connecting to localhost:27021
+2023-03-13T14:34:48.710+0000 I  REPL     [rsBackgroundSync] Changed sync source from empty to localhost:27021
+2023-03-13T14:34:48.719+0000 I  NETWORK  [conn4] end connection 127.0.0.1:60882 (5 connections now open)
+2023-03-13T14:34:58.495+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60904 #16 (6 connections now open)
+2023-03-13T14:34:58.497+0000 I  NETWORK  [conn16] received client metadata from 127.0.0.1:60904 conn16: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:35:20.214+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60909 #17 (7 connections now open)
+2023-03-13T14:35:20.216+0000 I  NETWORK  [conn17] received client metadata from 127.0.0.1:60909 conn17: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:35:36.771+0000 I  CONNPOOL [Replication] Ending idle connection to host localhost:27023 because the pool meets constraints; 2 connections to that host remain open
+2023-03-13T14:35:36.775+0000 I  CONNPOOL [Replication] Ending idle connection to host localhost:27023 because the pool meets constraints; 1 connections to that host remain open
+2023-03-13T14:35:59.355+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60911 #18 (8 connections now open)
+2023-03-13T14:35:59.355+0000 I  NETWORK  [conn18] received client metadata from 127.0.0.1:60911 conn18: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:35:59.368+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60914 #19 (9 connections now open)
+2023-03-13T14:35:59.369+0000 I  NETWORK  [conn19] received client metadata from 127.0.0.1:60914 conn19: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:35:59.369+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60915 #20 (10 connections now open)
+2023-03-13T14:35:59.370+0000 I  NETWORK  [conn20] received client metadata from 127.0.0.1:60915 conn20: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:35:59.371+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60917 #21 (11 connections now open)
+2023-03-13T14:35:59.373+0000 I  NETWORK  [conn21] received client metadata from 127.0.0.1:60917 conn21: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:36:09.146+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60921 #22 (12 connections now open)
+2023-03-13T14:36:09.146+0000 I  NETWORK  [conn22] received client metadata from 127.0.0.1:60921 conn22: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:36:09.156+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60926 #23 (13 connections now open)
+2023-03-13T14:36:09.157+0000 I  NETWORK  [conn23] received client metadata from 127.0.0.1:60926 conn23: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:36:59.372+0000 I  NETWORK  [conn20] end connection 127.0.0.1:60915 (12 connections now open)
+2023-03-13T14:36:59.377+0000 I  NETWORK  [conn19] end connection 127.0.0.1:60914 (11 connections now open)
+2023-03-13T14:39:24.074+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2023-03-13T14:39:24.074+0000 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-13T14:39:24.074+0000 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-13T14:40:46.815+0000 I  NETWORK  [conn5] end connection 127.0.0.1:60883 (10 connections now open)
+2023-03-13T14:44:24.075+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-1] Refresh for collection config.system.sessions took 1 ms and found the collection is not sharded
+2023-03-13T14:44:24.075+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2023-03-13T14:44:24.075+0000 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-13T14:44:24.075+0000 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-13T14:44:52.161+0000 I  QUERY    [clientcursormon] Cursor id 7301903926730217987 timed out, idle since 2023-03-13T14:34:48.715+0000
+2023-03-13T14:49:24.075+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-2] Refresh for collection config.system.sessions took 1 ms and found the collection is not sharded
+2023-03-13T14:49:24.075+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2023-03-13T14:49:24.075+0000 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-13T14:49:24.076+0000 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-13T14:50:02.755+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54864 #24 (11 connections now open)
+2023-03-13T14:50:02.756+0000 I  NETWORK  [conn24] received client metadata from 127.0.0.1:54864 conn24: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:50:04.762+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54867 #25 (12 connections now open)
+2023-03-13T14:50:04.763+0000 I  NETWORK  [conn25] received client metadata from 127.0.0.1:54867 conn25: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:50:43.376+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54873 #26 (13 connections now open)
+2023-03-13T14:50:43.377+0000 I  NETWORK  [conn26] received client metadata from 127.0.0.1:54873 conn26: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:50:43.386+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54876 #27 (14 connections now open)
+2023-03-13T14:50:43.387+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54877 #28 (15 connections now open)
+2023-03-13T14:50:43.388+0000 I  NETWORK  [conn27] received client metadata from 127.0.0.1:54876 conn27: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:50:43.388+0000 I  NETWORK  [conn28] received client metadata from 127.0.0.1:54877 conn28: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:51:03.615+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54883 #29 (16 connections now open)
+2023-03-13T14:51:03.616+0000 I  NETWORK  [conn29] received client metadata from 127.0.0.1:54883 conn29: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:51:04.224+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54888 #30 (17 connections now open)
+2023-03-13T14:51:04.224+0000 I  NETWORK  [conn30] received client metadata from 127.0.0.1:54888 conn30: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:51:43.395+0000 I  NETWORK  [conn27] end connection 127.0.0.1:54876 (16 connections now open)
+2023-03-13T14:53:42.899+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54893 #31 (17 connections now open)
+2023-03-13T14:53:42.900+0000 I  NETWORK  [conn31] received client metadata from 127.0.0.1:54893 conn31: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:53:42.910+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54900 #32 (18 connections now open)
+2023-03-13T14:53:42.911+0000 I  NETWORK  [conn32] received client metadata from 127.0.0.1:54900 conn32: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:53:42.942+0000 I  STORAGE  [repl-writer-worker-0] createCollection: config.changelog with provided UUID: 35525b80-26f9-4dfb-a062-9cdd44660704 and options: { uuid: UUID("35525b80-26f9-4dfb-a062-9cdd44660704"), capped: true, size: 209715200 }
+2023-03-13T14:53:42.957+0000 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.changelog
+2023-03-13T14:53:54.588+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54905 #33 (19 connections now open)
+2023-03-13T14:53:54.588+0000 I  NETWORK  [conn33] received client metadata from 127.0.0.1:54905 conn33: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:53:54.600+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54911 #34 (20 connections now open)
+2023-03-13T14:53:54.601+0000 I  NETWORK  [conn34] received client metadata from 127.0.0.1:54911 conn34: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:53:56.345+0000 I  STORAGE  [repl-writer-worker-0] createCollection: config.collections with provided UUID: 8994eb6b-9031-4646-9381-71dc12ca233f and options: { uuid: UUID("8994eb6b-9031-4646-9381-71dc12ca233f") }
+2023-03-13T14:53:56.362+0000 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.collections
+2023-03-13T14:53:56.448+0000 I  STORAGE  [repl-writer-worker-0] createCollection: config.system.sessions with provided UUID: 95544b59-f827-4570-a914-1fd1baf309e0 and options: { uuid: UUID("95544b59-f827-4570-a914-1fd1baf309e0") }
+2023-03-13T14:53:56.462+0000 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.system.sessions
+2023-03-13T14:53:59.721+0000 I  STORAGE  [repl-writer-worker-2] createCollection: config.actionlog with provided UUID: dfa200f1-7c52-4e5a-a402-c3b4d0736058 and options: { uuid: UUID("dfa200f1-7c52-4e5a-a402-c3b4d0736058"), capped: true, size: 20971520 }
+2023-03-13T14:53:59.738+0000 I  INDEX    [repl-writer-worker-2] index build: done building index _id_ on ns config.actionlog
+2023-03-13T14:54:06.695+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54921 #35 (21 connections now open)
+2023-03-13T14:54:06.698+0000 I  NETWORK  [conn35] received client metadata from 127.0.0.1:54921 conn35: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:54:06.711+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54927 #36 (22 connections now open)
+2023-03-13T14:54:06.712+0000 I  NETWORK  [conn36] received client metadata from 127.0.0.1:54927 conn36: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:54:06.713+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54928 #37 (23 connections now open)
+2023-03-13T14:54:06.714+0000 I  NETWORK  [conn37] received client metadata from 127.0.0.1:54928 conn37: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:54:24.106+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-3] Refresh for collection config.system.sessions to version 22|1||640f390417a87988661c5a16 took 31 ms
+2023-03-13T14:54:24.107+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27031
+2023-03-13T14:54:24.107+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27032
+2023-03-13T14:54:24.107+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27033
+2023-03-13T14:55:12.543+0000 I  NETWORK  [conn37] end connection 127.0.0.1:54928 (22 connections now open)
+2023-03-13T14:59:24.091+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-4] Refresh for collection config.system.sessions from version 22|1||640f390417a87988661c5a16 to version 279|1||640f390417a87988661c5a16 took 17 ms
+2023-03-13T15:04:24.087+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-5] Refresh for collection config.system.sessions from version 279|1||640f390417a87988661c5a16 to version 535|1||640f390417a87988661c5a16 took 12 ms
+2023-03-13T15:07:11.964+0000 I  STORAGE  [repl-writer-worker-5] createCollection: config.databases with provided UUID: e96dd24e-78f2-4cce-bd80-21a052401a63 and options: { uuid: UUID("e96dd24e-78f2-4cce-bd80-21a052401a63") }
+2023-03-13T15:07:11.986+0000 I  INDEX    [repl-writer-worker-5] index build: done building index _id_ on ns config.databases
+2023-03-13T15:09:24.087+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-6] Refresh for collection config.system.sessions from version 535|1||640f390417a87988661c5a16 to version 683|1||640f390417a87988661c5a16 took 11 ms
+2023-03-13T15:18:32.282+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:58953 #41 (23 connections now open)
+2023-03-13T15:18:32.284+0000 I  NETWORK  [conn41] received client metadata from 127.0.0.1:58953 conn41: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T15:23:32.290+0000 I  NETWORK  [conn41] end connection 127.0.0.1:58953 (22 connections now open)
+2023-03-13T15:24:24.081+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27031 due to ShutdownInProgress: Pool for localhost:27031 has expired.
+2023-03-13T15:24:24.081+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27033 due to ShutdownInProgress: Pool for localhost:27033 has expired.
+2023-03-13T15:24:24.081+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27032 due to ShutdownInProgress: Pool for localhost:27032 has expired.
+2023-03-13T15:24:24.082+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27031
+2023-03-13T15:24:24.083+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27032
+2023-03-13T15:24:24.083+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27033
+2023-03-13T15:45:39.806+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:59039 #45 (23 connections now open)
+2023-03-13T15:45:39.808+0000 I  NETWORK  [conn45] received client metadata from 127.0.0.1:59039 conn45: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T15:54:24.080+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27031 due to ShutdownInProgress: Pool for localhost:27031 has expired.
+2023-03-13T15:54:24.081+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27032 due to ShutdownInProgress: Pool for localhost:27032 has expired.
+2023-03-13T15:54:24.081+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27033 due to ShutdownInProgress: Pool for localhost:27033 has expired.
+2023-03-13T15:54:24.082+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27031
+2023-03-13T15:54:24.082+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27032
+2023-03-13T15:54:24.083+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27033
+2023-03-13T15:54:39.816+0000 I  NETWORK  [conn45] end connection 127.0.0.1:59039 (22 connections now open)
+2023-03-13T15:57:15.679+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:59074 #49 (23 connections now open)
+2023-03-13T15:57:15.681+0000 I  NETWORK  [conn49] received client metadata from 127.0.0.1:59074 conn49: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T16:02:15.686+0000 I  NETWORK  [conn49] end connection 127.0.0.1:59074 (22 connections now open)
+2023-03-13T16:09:24.083+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27033 due to ShutdownInProgress: Pool for localhost:27033 has expired.
+2023-03-13T16:09:24.083+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27033
+2023-03-13T16:14:35.961+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:59087 #51 (23 connections now open)
+2023-03-13T16:14:35.963+0000 I  NETWORK  [conn51] received client metadata from 127.0.0.1:59087 conn51: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T16:19:35.965+0000 I  NETWORK  [conn51] end connection 127.0.0.1:59087 (22 connections now open)
+2023-03-13T16:30:39.267+0000 I  CONNPOOL [RS] Connecting to localhost:27021
+2023-03-13T16:31:39.271+0000 I  CONNPOOL [RS] Ending idle connection to host localhost:27021 because the pool meets constraints; 2 connections to that host remain open
+2023-03-13T16:39:24.084+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27033 due to ShutdownInProgress: Pool for localhost:27033 has expired.
+2023-03-13T16:39:24.084+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27032 due to ShutdownInProgress: Pool for localhost:27032 has expired.
+2023-03-13T16:39:24.084+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27031 due to ShutdownInProgress: Pool for localhost:27031 has expired.
+2023-03-13T16:39:24.085+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27031
+2023-03-13T16:39:24.085+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27032
+2023-03-13T16:39:24.086+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27033
+2023-03-13T16:49:24.086+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27031 due to ShutdownInProgress: Pool for localhost:27031 has expired.
+2023-03-13T16:49:24.086+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27032 due to ShutdownInProgress: Pool for localhost:27032 has expired.
+2023-03-13T16:49:24.086+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27033 due to ShutdownInProgress: Pool for localhost:27033 has expired.
+2023-03-13T16:49:24.086+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27031
+2023-03-13T16:49:24.087+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27032
+2023-03-13T16:49:24.087+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27033
+2023-03-13T16:59:24.085+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27031 due to ShutdownInProgress: Pool for localhost:27031 has expired.
+2023-03-13T16:59:24.086+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27032 due to ShutdownInProgress: Pool for localhost:27032 has expired.
+2023-03-13T16:59:24.086+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27033 due to ShutdownInProgress: Pool for localhost:27033 has expired.
+2023-03-13T16:59:24.087+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27031
+2023-03-13T16:59:24.087+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27032
+2023-03-13T16:59:24.088+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27033
+2023-03-13T17:19:24.087+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27031 due to ShutdownInProgress: Pool for localhost:27031 has expired.
+2023-03-13T17:19:24.088+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27032 due to ShutdownInProgress: Pool for localhost:27032 has expired.
+2023-03-13T17:19:24.088+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27033 due to ShutdownInProgress: Pool for localhost:27033 has expired.
+2023-03-13T17:19:24.090+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27031
+2023-03-13T17:19:24.091+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27032
+2023-03-13T17:19:24.091+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27033
+2023-03-13T17:43:12.472+0000 I  ELECTION [replexec-95] Scheduling catchup takeover at 2023-03-13T17:43:42.472+0000
+2023-03-13T17:43:12.473+0000 I  REPL     [replexec-101] Canceling catchup takeover callback
+2023-03-13T17:54:24.090+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27031 due to ShutdownInProgress: Pool for localhost:27031 has expired.
+2023-03-13T17:54:24.092+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27032 due to ShutdownInProgress: Pool for localhost:27032 has expired.
+2023-03-13T17:54:24.093+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27031
+2023-03-13T17:54:24.094+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27032
+2023-03-13T17:59:24.096+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27033 due to ShutdownInProgress: Pool for localhost:27033 has expired.
+2023-03-13T17:59:24.102+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27033
+2023-03-13T18:09:24.094+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27032 due to ShutdownInProgress: Pool for localhost:27032 has expired.
+2023-03-13T18:09:24.094+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27033 due to ShutdownInProgress: Pool for localhost:27033 has expired.
+2023-03-13T18:09:24.095+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27031 due to ShutdownInProgress: Pool for localhost:27031 has expired.
+2023-03-13T18:09:24.095+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27031
+2023-03-13T18:09:24.096+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27032
+2023-03-13T18:09:24.096+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27033
+2023-03-13T18:39:24.098+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27032 due to ShutdownInProgress: Pool for localhost:27032 has expired.
+2023-03-13T18:39:24.099+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27032
+2023-03-13T19:04:24.098+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27031 due to ShutdownInProgress: Pool for localhost:27031 has expired.
+2023-03-13T19:04:24.099+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27031
+2023-03-13T19:04:24.099+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27033 due to ShutdownInProgress: Pool for localhost:27033 has expired.
+2023-03-13T19:04:24.100+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27033
+2023-03-13T19:14:24.101+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27031 due to ShutdownInProgress: Pool for localhost:27031 has expired.
+2023-03-13T19:14:24.101+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27032 due to ShutdownInProgress: Pool for localhost:27032 has expired.
+2023-03-13T19:14:24.101+0000 I  CONNPOOL [TaskExecutorPool-0] Dropping all pooled connections to localhost:27033 due to ShutdownInProgress: Pool for localhost:27033 has expired.
+2023-03-13T19:14:24.102+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27031
+2023-03-13T19:14:24.103+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27032
+2023-03-13T19:14:24.103+0000 I  CONNPOOL [TaskExecutorPool-0] Connecting to localhost:27033

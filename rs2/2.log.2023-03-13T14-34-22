@@ -1,0 +1,411 @@
+2023-03-13T13:57:00.230+0000 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2023-03-13T13:57:00.233+0000 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2023-03-13T13:57:00.234+0000 I  CONTROL  [initandlisten] MongoDB starting : pid=9816 port=27022 dbpath=\data\rs2 64-bit host=DESKTOP-9V258QU
+2023-03-13T13:57:00.234+0000 I  CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2023-03-13T13:57:00.235+0000 I  CONTROL  [initandlisten] db version v4.2.24
+2023-03-13T13:57:00.235+0000 I  CONTROL  [initandlisten] git version: 5e4ec1d24431fcdd28b579a024c5c801b8cde4e2
+2023-03-13T13:57:00.235+0000 I  CONTROL  [initandlisten] allocator: tcmalloc
+2023-03-13T13:57:00.243+0000 I  CONTROL  [initandlisten] modules: none
+2023-03-13T13:57:00.243+0000 I  CONTROL  [initandlisten] build environment:
+2023-03-13T13:57:00.243+0000 I  CONTROL  [initandlisten]     distmod: 2012plus
+2023-03-13T13:57:00.243+0000 I  CONTROL  [initandlisten]     distarch: x86_64
+2023-03-13T13:57:00.243+0000 I  CONTROL  [initandlisten]     target_arch: x86_64
+2023-03-13T13:57:00.243+0000 I  CONTROL  [initandlisten] options: { net: { port: 27022 }, replication: { replSet: "myRepl" }, sharding: { clusterRole: "configsvr" }, storage: { dbPath: "\data\rs2" }, systemLog: { destination: "file", path: "\data\rs2\2.log" } }
+2023-03-13T13:57:00.245+0000 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3528M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2023-03-13T13:57:00.286+0000 I  STORAGE  [initandlisten] WiredTiger message [1678715820:285444][9816:140725933595440], txn-recover: Set global recovery timestamp: (0, 0)
+2023-03-13T13:57:00.300+0000 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2023-03-13T13:57:00.314+0000 I  STORAGE  [initandlisten] Timestamp monitor starting
+2023-03-13T13:57:00.322+0000 I  CONTROL  [initandlisten] 
+2023-03-13T13:57:00.322+0000 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2023-03-13T13:57:00.322+0000 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2023-03-13T13:57:00.322+0000 I  CONTROL  [initandlisten] 
+2023-03-13T13:57:00.323+0000 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2023-03-13T13:57:00.323+0000 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2023-03-13T13:57:00.323+0000 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2023-03-13T13:57:00.323+0000 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2023-03-13T13:57:00.323+0000 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2023-03-13T13:57:00.323+0000 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2023-03-13T13:57:00.323+0000 I  CONTROL  [initandlisten] 
+2023-03-13T13:57:00.324+0000 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2023-03-13T13:57:00.325+0000 I  STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 25d9776a-8adf-40a7-9add-7aa43ee1f847 and options: { capped: true, size: 10485760 }
+2023-03-13T13:57:00.341+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.startup_log
+2023-03-13T13:57:01.016+0000 W  FTDC     [initandlisten] Failed to initialize Performance Counters for FTDC: WindowsPdhError: PdhExpandCounterPathW failed with 'L’objet spécifié n’a pas été trouvé sur l’ordinateur.' for counter '\Memory\Available Bytes'
+2023-03-13T13:57:01.017+0000 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/rs2/diagnostic.data'
+2023-03-13T13:57:01.020+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: ReadConcernMajorityNotAvailableYet: could not get updated shard list from config server :: caused by :: Read concern majority reads are currently not possible.; will retry after 30s
+2023-03-13T13:57:01.020+0000 I  SHARDING [thread1] creating distributed lock ping thread for process ConfigServer (sleeping for 30000ms)
+2023-03-13T13:57:01.021+0000 I  STORAGE  [initandlisten] createCollection: local.replset.oplogTruncateAfterPoint with generated UUID: 2adcda63-944b-4360-8d3d-8126ebb6d499 and options: {}
+2023-03-13T13:57:01.041+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.replset.oplogTruncateAfterPoint
+2023-03-13T13:57:01.042+0000 I  STORAGE  [initandlisten] createCollection: local.replset.minvalid with generated UUID: 94915dd4-cbd7-438e-a76e-2ac1460831d8 and options: {}
+2023-03-13T13:57:01.053+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.replset.minvalid
+2023-03-13T13:57:01.053+0000 I  STORAGE  [initandlisten] createCollection: local.replset.election with generated UUID: a81d7aea-ef5e-4c9a-b6d3-8f82c66fd282 and options: {}
+2023-03-13T13:57:01.071+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.replset.election
+2023-03-13T13:57:01.072+0000 I  REPL     [initandlisten] Did not find local initialized voted for document at startup.
+2023-03-13T13:57:01.072+0000 I  REPL     [initandlisten] Did not find local Rollback ID document at startup. Creating one.
+2023-03-13T13:57:01.072+0000 I  STORAGE  [initandlisten] createCollection: local.system.rollback.id with generated UUID: 44e00c1f-88d1-4133-abe6-13bf40f42939 and options: {}
+2023-03-13T13:57:01.086+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.system.rollback.id
+2023-03-13T13:57:01.087+0000 I  REPL     [initandlisten] Initialized the rollback ID to 1
+2023-03-13T13:57:01.087+0000 I  REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2023-03-13T13:57:01.090+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-0] Refresh for database config from version {} to version { uuid: UUID("7c8fae06-affb-436c-ad0a-bb3fcc3bc7a3"), lastMod: 0 } took 0 ms
+2023-03-13T13:57:01.090+0000 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-13T13:57:01.090+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Cannot use non-local read concern until replica set is finished initializing.
+2023-03-13T13:57:01.090+0000 I  NETWORK  [listener] Listening on 127.0.0.1
+2023-03-13T13:57:01.090+0000 I  NETWORK  [listener] waiting for connections on port 27022
+2023-03-13T13:57:01.090+0000 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-13T13:57:31.021+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T13:58:01.021+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T13:58:31.021+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T13:59:01.022+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T13:59:31.023+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T14:00:01.025+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T14:00:31.025+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T14:01:01.026+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T14:01:31.026+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T14:02:01.026+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T14:02:01.091+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Cannot use non-local read concern until replica set is finished initializing.
+2023-03-13T14:02:01.091+0000 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-13T14:02:01.092+0000 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-13T14:02:31.028+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T14:03:01.029+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T14:03:31.030+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T14:04:01.031+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T14:04:31.031+0000 I  SHARDING [shard-registry-reload] Periodic reload of shard registry failed  :: caused by :: NotYetInitialized: could not get updated shard list from config server :: caused by :: Cannot use non-local read concern until replica set is finished initializing.; will retry after 30s
+2023-03-13T14:04:45.206+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:51912 #1 (1 connection now open)
+2023-03-13T14:04:45.207+0000 I  NETWORK  [conn1] end connection 127.0.0.1:51912 (0 connections now open)
+2023-03-13T14:04:45.220+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:51914 #2 (1 connection now open)
+2023-03-13T14:04:45.220+0000 I  NETWORK  [conn2] received client metadata from 127.0.0.1:51914 conn2: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:04:45.222+0000 I  CONNPOOL [Replication] Connecting to localhost:27021
+2023-03-13T14:04:45.739+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:51920 #4 (2 connections now open)
+2023-03-13T14:04:45.740+0000 I  NETWORK  [conn4] end connection 127.0.0.1:51920 (1 connection now open)
+2023-03-13T14:04:45.760+0000 I  STORAGE  [replexec-0] createCollection: local.system.replset with generated UUID: c9161c9c-ccec-46c6-85ad-2c254571e69e and options: {}
+2023-03-13T14:04:45.778+0000 I  INDEX    [replexec-0] index build: done building index _id_ on ns local.system.replset
+2023-03-13T14:04:45.779+0000 I  REPL     [replexec-0] New replica set config in use: { _id: "myRepl", version: 1, configsvr: true, protocolVersion: 1, writeConcernMajorityJournalDefault: true, members: [ { _id: 0, host: "localhost:27021", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27022", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27023", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('640f2d7dd54f47b778949376') } }
+2023-03-13T14:04:45.779+0000 I  REPL     [replexec-0] This node is localhost:27022 in the config
+2023-03-13T14:04:45.779+0000 I  REPL     [replexec-0] transition to STARTUP2 from STARTUP
+2023-03-13T14:04:45.780+0000 I  REPL     [replexec-0] Starting replication storage threads
+2023-03-13T14:04:45.781+0000 I  CONNPOOL [Replication] Connecting to localhost:27023
+2023-03-13T14:04:45.781+0000 I  REPL     [replexec-3] Member localhost:27021 is now in state SECONDARY
+2023-03-13T14:04:45.782+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:51922 #7 (2 connections now open)
+2023-03-13T14:04:45.782+0000 I  NETWORK  [conn7] received client metadata from 127.0.0.1:51922 conn7: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:04:45.785+0000 I  REPL     [replexec-2] Member localhost:27023 is now in state STARTUP2
+2023-03-13T14:04:45.785+0000 I  STORAGE  [replexec-0] createCollection: local.temp_oplog_buffer with generated UUID: 3b76f184-63b6-4aa4-987e-99f0cb6fe7ff and options: { temp: true }
+2023-03-13T14:04:45.802+0000 I  INDEX    [replexec-0] index build: done building index _id_ on ns local.temp_oplog_buffer
+2023-03-13T14:04:45.802+0000 I  INITSYNC [replication-0] Starting initial sync (attempt 1 of 10)
+2023-03-13T14:04:45.803+0000 I  STORAGE  [replication-0] Finishing collection drop for local.temp_oplog_buffer (3b76f184-63b6-4aa4-987e-99f0cb6fe7ff).
+2023-03-13T14:04:45.807+0000 I  STORAGE  [replication-0] createCollection: local.temp_oplog_buffer with generated UUID: 593dc670-9dd9-4731-a90f-d00037e40e1c and options: { temp: true }
+2023-03-13T14:04:45.821+0000 I  INDEX    [replication-0] index build: done building index _id_ on ns local.temp_oplog_buffer
+2023-03-13T14:04:45.822+0000 I  REPL     [replication-0] waiting for 2 pings from other members before syncing
+2023-03-13T14:04:46.823+0000 I  REPL     [replication-1] sync source candidate: localhost:27021
+2023-03-13T14:04:46.823+0000 I  INITSYNC [replication-1] Initial syncer oplog truncation finished in: 0ms
+2023-03-13T14:04:46.824+0000 I  REPL     [replication-1] ******
+2023-03-13T14:04:46.824+0000 I  REPL     [replication-1] creating replication oplog of size: 6612MB...
+2023-03-13T14:04:46.824+0000 I  STORAGE  [replication-1] createCollection: local.oplog.rs with generated UUID: cafa5448-8ff0-4b79-a077-6d0366fe57bd and options: { capped: true, size: 6933844377.0, autoIndexId: false }
+2023-03-13T14:04:46.848+0000 I  STORAGE  [replication-1] Starting OplogTruncaterThread local.oplog.rs
+2023-03-13T14:04:46.849+0000 I  STORAGE  [replication-1] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2023-03-13T14:04:46.850+0000 I  STORAGE  [replication-1] Scanning the oplog to determine where to place markers for truncation
+2023-03-13T14:04:46.850+0000 I  STORAGE  [replication-1] WiredTiger record store oplog processing took 0ms
+2023-03-13T14:04:46.883+0000 I  REPL     [replication-1] ******
+2023-03-13T14:04:46.884+0000 I  REPL     [replication-1] dropReplicatedDatabases - dropping 1 databases
+2023-03-13T14:04:46.884+0000 I  REPL     [replication-1] dropReplicatedDatabases - dropped 1 databases
+2023-03-13T14:04:46.885+0000 I  CONNPOOL [RS] Connecting to localhost:27021
+2023-03-13T14:04:46.907+0000 I  INITSYNC [replication-1] CollectionCloner::start called, on ns:admin.system.version
+2023-03-13T14:04:46.909+0000 I  STORAGE  [repl-writer-worker-0] createCollection: admin.system.version with provided UUID: 3c8b97b2-8533-4bd3-a6e1-e52427eba037 and options: { uuid: UUID("3c8b97b2-8533-4bd3-a6e1-e52427eba037") }
+2023-03-13T14:04:46.925+0000 I  INDEX    [repl-writer-worker-0] index build: starting on admin.system.version properties: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" } using method: Foreground
+2023-03-13T14:04:46.925+0000 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-13T14:04:46.943+0000 I  COMMAND  [repl-writer-worker-0] setting featureCompatibilityVersion to 4.2
+2023-03-13T14:04:46.943+0000 I  NETWORK  [repl-writer-worker-0] Skip closing connection for connection # 7
+2023-03-13T14:04:46.943+0000 I  NETWORK  [repl-writer-worker-0] Skip closing connection for connection # 2
+2023-03-13T14:04:46.944+0000 I  INITSYNC [replication-0] CollectionCloner ns:admin.system.version finished cloning with status: OK
+2023-03-13T14:04:46.947+0000 I  INDEX    [replication-0] index build: inserted 1 keys from external sorter into index in 0 seconds
+2023-03-13T14:04:46.950+0000 I  INDEX    [replication-0] index build: done building index _id_ on ns admin.system.version
+2023-03-13T14:04:46.987+0000 I  INITSYNC [replication-0] Finished cloning data: OK. Beginning oplog replay.
+2023-03-13T14:04:46.988+0000 I  INITSYNC [replication-1] No need to apply operations. (currently at { : Timestamp(1678716285, 1) })
+2023-03-13T14:04:46.989+0000 I  COMMAND  [replication-0] CMD: collMod: { collMod: "startup_log" }
+2023-03-13T14:04:46.990+0000 I  COMMAND  [replication-0] CMD: collMod: { collMod: "replset.oplogTruncateAfterPoint" }
+2023-03-13T14:04:46.990+0000 I  COMMAND  [replication-0] CMD: collMod: { collMod: "system.rollback.id" }
+2023-03-13T14:04:46.990+0000 I  COMMAND  [replication-0] CMD: collMod: { collMod: "temp_oplog_buffer" }
+2023-03-13T14:04:46.990+0000 I  COMMAND  [replication-0] CMD: collMod: { collMod: "replset.minvalid" }
+2023-03-13T14:04:46.991+0000 I  COMMAND  [replication-0] CMD: collMod: { collMod: "replset.election" }
+2023-03-13T14:04:46.991+0000 I  COMMAND  [replication-0] CMD: collMod: { collMod: "system.replset" }
+2023-03-13T14:04:46.991+0000 I  COMMAND  [replication-0] CMD: collMod: { collMod: "oplog.rs" }
+2023-03-13T14:04:46.991+0000 I  INITSYNC [replication-1] Finished fetching oplog during initial sync: CallbackCanceled: error in fetcher batch callback: oplog fetcher is shutting down. Last fetched optime: { ts: Timestamp(0, 0), t: -1 }
+2023-03-13T14:04:46.992+0000 I  CONNPOOL [RS] Ending connection to host localhost:27021 due to bad connection status: CallbackCanceled: Callback was canceled; 1 connections to that host remain open
+2023-03-13T14:04:46.992+0000 I  INITSYNC [replication-1] Initial sync attempt finishing up.
+2023-03-13T14:04:46.992+0000 I  INITSYNC [replication-1] Initial Sync Attempt Statistics: { failedInitialSyncAttempts: 0, maxFailedInitialSyncAttempts: 10, initialSyncStart: new Date(1678716285802), totalInitialSyncElapsedMillis: 1190, initialSyncAttempts: [], approxTotalDataSize: 59, approxTotalBytesCopied: 59, remainingInitialSyncEstimatedMillis: 0, fetchedMissingDocs: 0, appliedOps: 0, initialSyncOplogStart: Timestamp(1678716285, 1), initialSyncOplogEnd: Timestamp(1678716285, 1), databases: { databasesToClone: 0, databasesCloned: 1, admin: { collections: 1, clonedCollections: 1, start: new Date(1678716286903), end: new Date(1678716286987), elapsedMillis: 84, admin.system.version: { documentsToCopy: 1, documentsCopied: 1, indexes: 1, fetchedBatches: 1, bytesToCopy: 59, approxBytesCopied: 59, start: new Date(1678716286907), end: new Date(1678716286987), elapsedMillis: 80, receivedBatches: 1 } } } }
+2023-03-13T14:04:46.992+0000 I  STORAGE  [replication-0] Finishing collection drop for local.temp_oplog_buffer (593dc670-9dd9-4731-a90f-d00037e40e1c).
+2023-03-13T14:04:46.999+0000 I  INITSYNC [replication-0] initial sync done; took 1s.
+2023-03-13T14:04:46.999+0000 I  REPL     [replication-0] transition to RECOVERING from STARTUP2
+2023-03-13T14:04:46.999+0000 I  REPL     [replication-0] Starting replication fetcher thread
+2023-03-13T14:04:47.000+0000 I  REPL     [replication-0] Starting replication applier thread
+2023-03-13T14:04:47.000+0000 I  REPL     [replication-0] Starting replication reporter thread
+2023-03-13T14:04:47.000+0000 I  REPL     [rsSync-0] Starting oplog application
+2023-03-13T14:04:47.001+0000 I  REPL     [rsBackgroundSync] could not find member to sync from
+2023-03-13T14:04:47.002+0000 I  REPL     [replexec-3] Member localhost:27023 is now in state RECOVERING
+2023-03-13T14:04:47.006+0000 I  REPL     [rsSync-0] transition to SECONDARY from RECOVERING
+2023-03-13T14:04:47.006+0000 I  REPL     [rsSync-0] Resetting sync source to empty, which was :27017
+2023-03-13T14:04:47.503+0000 I  REPL     [replexec-3] Member localhost:27023 is now in state SECONDARY
+2023-03-13T14:04:55.664+0000 I  ELECTION [conn2] Received vote request: { replSetRequestVotes: 1, setName: "myRepl", dryRun: true, term: 0, candidateIndex: 0, configVersion: 1, lastCommittedOp: { ts: Timestamp(1678716285, 1), t: -1 } }
+2023-03-13T14:04:55.665+0000 I  ELECTION [conn2] Sending vote response: { term: 0, voteGranted: true, reason: "" }
+2023-03-13T14:04:55.679+0000 I  ELECTION [conn2] Received vote request: { replSetRequestVotes: 1, setName: "myRepl", dryRun: false, term: 1, candidateIndex: 0, configVersion: 1, lastCommittedOp: { ts: Timestamp(1678716285, 1), t: -1 } }
+2023-03-13T14:04:55.679+0000 I  ELECTION [conn2] Sending vote response: { term: 1, voteGranted: true, reason: "" }
+2023-03-13T14:04:56.029+0000 I  REPL     [replexec-1] Member localhost:27021 is now in state PRIMARY
+2023-03-13T14:04:57.018+0000 I  REPL     [rsBackgroundSync] sync source candidate: localhost:27021
+2023-03-13T14:04:57.030+0000 I  REPL     [rsBackgroundSync] Changed sync source from empty to localhost:27021
+2023-03-13T14:04:57.032+0000 I  CONNPOOL [RS] Connecting to localhost:27021
+2023-03-13T14:04:57.038+0000 I  STORAGE  [repl-writer-worker-0] createCollection: config.transactions with provided UUID: 4bc16f6a-b378-43ad-9963-f32215cf50b9 and options: { uuid: UUID("4bc16f6a-b378-43ad-9963-f32215cf50b9") }
+2023-03-13T14:04:57.062+0000 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.transactions
+2023-03-13T14:04:57.065+0000 I  STORAGE  [repl-writer-worker-0] createCollection: config.image_collection with provided UUID: 3bbbdab8-7692-4202-8099-c5d79cd0ae94 and options: { uuid: UUID("3bbbdab8-7692-4202-8099-c5d79cd0ae94") }
+2023-03-13T14:04:57.081+0000 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.image_collection
+2023-03-13T14:04:57.085+0000 I  STORAGE  [repl-writer-worker-0] createCollection: config.chunks with provided UUID: 4b9dce1e-4745-4687-b714-450de200d7c5 and options: { uuid: UUID("4b9dce1e-4745-4687-b714-450de200d7c5") }
+2023-03-13T14:04:57.103+0000 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.chunks
+2023-03-13T14:04:57.149+0000 I  INDEX    [repl-writer-worker-0] index build: starting on config.chunks properties: { v: 2, unique: true, key: { ns: 1, min: 1 }, name: "ns_1_min_1", ns: "config.chunks" } using method: Hybrid
+2023-03-13T14:04:57.149+0000 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-13T14:04:57.149+0000 I  STORAGE  [repl-writer-worker-0] Index build initialized: d240e8e9-dd95-4955-8474-f822cfd8c52a: config.chunks (4b9dce1e-4745-4687-b714-450de200d7c5 ): indexes: 1
+2023-03-13T14:04:57.150+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-13T14:04:57.157+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-13T14:04:57.161+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ns_1_min_1 on ns config.chunks
+2023-03-13T14:04:57.168+0000 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: d240e8e9-dd95-4955-8474-f822cfd8c52a: config.chunks ( 4b9dce1e-4745-4687-b714-450de200d7c5 ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2023-03-13T14:04:57.205+0000 I  INDEX    [repl-writer-worker-0] index build: starting on config.chunks properties: { v: 2, unique: true, key: { ns: 1, shard: 1, min: 1 }, name: "ns_1_shard_1_min_1", ns: "config.chunks" } using method: Hybrid
+2023-03-13T14:04:57.205+0000 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-13T14:04:57.205+0000 I  STORAGE  [repl-writer-worker-0] Index build initialized: b71f4164-d726-4c36-9801-74cf5f68c149: config.chunks (4b9dce1e-4745-4687-b714-450de200d7c5 ): indexes: 1
+2023-03-13T14:04:57.206+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-13T14:04:57.212+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-13T14:04:57.214+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ns_1_shard_1_min_1 on ns config.chunks
+2023-03-13T14:04:57.220+0000 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: b71f4164-d726-4c36-9801-74cf5f68c149: config.chunks ( 4b9dce1e-4745-4687-b714-450de200d7c5 ). Index specs built: 1. Indexes in catalog before build: 2. Indexes in catalog after build: 3
+2023-03-13T14:04:57.240+0000 I  INDEX    [repl-writer-worker-0] index build: starting on config.chunks properties: { v: 2, unique: true, key: { ns: 1, lastmod: 1 }, name: "ns_1_lastmod_1", ns: "config.chunks" } using method: Hybrid
+2023-03-13T14:04:57.240+0000 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-13T14:04:57.240+0000 I  STORAGE  [repl-writer-worker-0] Index build initialized: 8aa31380-1c70-4214-b0ed-477d58b818aa: config.chunks (4b9dce1e-4745-4687-b714-450de200d7c5 ): indexes: 1
+2023-03-13T14:04:57.241+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-13T14:04:57.243+0000 I  STORAGE  [repl-writer-worker-0] createCollection: config.migrations with provided UUID: 49bda865-42e1-486b-b6eb-abe1f7b337c8 and options: { uuid: UUID("49bda865-42e1-486b-b6eb-abe1f7b337c8") }
+2023-03-13T14:04:57.244+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-13T14:04:57.266+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ns_1_lastmod_1 on ns config.chunks
+2023-03-13T14:04:57.275+0000 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.migrations
+2023-03-13T14:04:57.281+0000 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: 8aa31380-1c70-4214-b0ed-477d58b818aa: config.chunks ( 4b9dce1e-4745-4687-b714-450de200d7c5 ). Index specs built: 1. Indexes in catalog before build: 3. Indexes in catalog after build: 4
+2023-03-13T14:04:57.311+0000 I  INDEX    [repl-writer-worker-0] index build: starting on config.migrations properties: { v: 2, unique: true, key: { ns: 1, min: 1 }, name: "ns_1_min_1", ns: "config.migrations" } using method: Hybrid
+2023-03-13T14:04:57.311+0000 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-13T14:04:57.311+0000 I  STORAGE  [repl-writer-worker-0] Index build initialized: bea15c76-c9c0-4f29-aa4d-f7f00cde4380: config.migrations (49bda865-42e1-486b-b6eb-abe1f7b337c8 ): indexes: 1
+2023-03-13T14:04:57.312+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-13T14:04:57.315+0000 I  STORAGE  [repl-writer-worker-0] createCollection: config.shards with provided UUID: 574a323a-ec5e-4441-82b6-a39100488862 and options: { uuid: UUID("574a323a-ec5e-4441-82b6-a39100488862") }
+2023-03-13T14:04:57.316+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-13T14:04:57.319+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ns_1_min_1 on ns config.migrations
+2023-03-13T14:04:57.342+0000 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.shards
+2023-03-13T14:04:57.344+0000 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: bea15c76-c9c0-4f29-aa4d-f7f00cde4380: config.migrations ( 49bda865-42e1-486b-b6eb-abe1f7b337c8 ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2023-03-13T14:04:57.375+0000 I  INDEX    [repl-writer-worker-0] index build: starting on config.shards properties: { v: 2, unique: true, key: { host: 1 }, name: "host_1", ns: "config.shards" } using method: Hybrid
+2023-03-13T14:04:57.376+0000 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-13T14:04:57.376+0000 I  STORAGE  [repl-writer-worker-0] Index build initialized: 3c7d928f-067f-4677-ac14-5b16cf83c3a9: config.shards (574a323a-ec5e-4441-82b6-a39100488862 ): indexes: 1
+2023-03-13T14:04:57.376+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-13T14:04:57.380+0000 I  STORAGE  [repl-writer-worker-0] createCollection: config.locks with provided UUID: 03465cc4-68ee-4658-8da3-8fd152bcbb9b and options: { uuid: UUID("03465cc4-68ee-4658-8da3-8fd152bcbb9b") }
+2023-03-13T14:04:57.381+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-13T14:04:57.397+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index host_1 on ns config.shards
+2023-03-13T14:04:57.410+0000 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.locks
+2023-03-13T14:04:57.414+0000 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: 3c7d928f-067f-4677-ac14-5b16cf83c3a9: config.shards ( 574a323a-ec5e-4441-82b6-a39100488862 ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2023-03-13T14:04:57.434+0000 I  INDEX    [repl-writer-worker-0] index build: starting on config.locks properties: { v: 2, key: { ts: 1 }, name: "ts_1", ns: "config.locks" } using method: Hybrid
+2023-03-13T14:04:57.435+0000 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-13T14:04:57.435+0000 I  STORAGE  [repl-writer-worker-0] Index build initialized: 511cc2c6-e11f-45bc-a897-cdf2cc983284: config.locks (03465cc4-68ee-4658-8da3-8fd152bcbb9b ): indexes: 1
+2023-03-13T14:04:57.435+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-13T14:04:57.440+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-13T14:04:57.442+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ts_1 on ns config.locks
+2023-03-13T14:04:57.445+0000 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: 511cc2c6-e11f-45bc-a897-cdf2cc983284: config.locks ( 03465cc4-68ee-4658-8da3-8fd152bcbb9b ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2023-03-13T14:04:57.460+0000 I  INDEX    [repl-writer-worker-0] index build: starting on config.locks properties: { v: 2, key: { state: 1, process: 1 }, name: "state_1_process_1", ns: "config.locks" } using method: Hybrid
+2023-03-13T14:04:57.460+0000 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-13T14:04:57.460+0000 I  STORAGE  [repl-writer-worker-0] Index build initialized: 25a7b893-0a43-478b-bf59-0a8fd67fa046: config.locks (03465cc4-68ee-4658-8da3-8fd152bcbb9b ): indexes: 1
+2023-03-13T14:04:57.460+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-13T14:04:57.462+0000 I  STORAGE  [repl-writer-worker-0] createCollection: config.lockpings with provided UUID: bc6b9c2f-e4ee-4c3d-b3c6-a07cd0dea5bb and options: { uuid: UUID("bc6b9c2f-e4ee-4c3d-b3c6-a07cd0dea5bb") }
+2023-03-13T14:04:57.463+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-13T14:04:57.465+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index state_1_process_1 on ns config.locks
+2023-03-13T14:04:57.474+0000 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: 25a7b893-0a43-478b-bf59-0a8fd67fa046: config.locks ( 03465cc4-68ee-4658-8da3-8fd152bcbb9b ). Index specs built: 1. Indexes in catalog before build: 2. Indexes in catalog after build: 3
+2023-03-13T14:04:57.481+0000 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.lockpings
+2023-03-13T14:04:57.502+0000 I  INDEX    [repl-writer-worker-0] index build: starting on config.lockpings properties: { v: 2, key: { ping: 1 }, name: "ping_1", ns: "config.lockpings" } using method: Hybrid
+2023-03-13T14:04:57.502+0000 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-13T14:04:57.502+0000 I  STORAGE  [repl-writer-worker-0] Index build initialized: e3725105-f402-4150-97ce-62afeb08f336: config.lockpings (bc6b9c2f-e4ee-4c3d-b3c6-a07cd0dea5bb ): indexes: 1
+2023-03-13T14:04:57.502+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-13T14:04:57.502+0000 I  STORAGE  [replication-0] Triggering the first stable checkpoint. Initial Data: Timestamp(1678716285, 1) PrevStable: Timestamp(0, 0) CurrStable: Timestamp(1678716296, 6)
+2023-03-13T14:04:57.504+0000 I  STORAGE  [repl-writer-worker-0] createCollection: config.tags with provided UUID: 88d57bbe-e3d1-436e-9581-5d7be154e21b and options: { uuid: UUID("88d57bbe-e3d1-436e-9581-5d7be154e21b") }
+2023-03-13T14:04:57.505+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-13T14:04:57.532+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ping_1 on ns config.lockpings
+2023-03-13T14:04:57.541+0000 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: e3725105-f402-4150-97ce-62afeb08f336: config.lockpings ( bc6b9c2f-e4ee-4c3d-b3c6-a07cd0dea5bb ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2023-03-13T14:04:57.542+0000 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.tags
+2023-03-13T14:04:57.597+0000 I  INDEX    [repl-writer-worker-0] index build: starting on config.tags properties: { v: 2, unique: true, key: { ns: 1, min: 1 }, name: "ns_1_min_1", ns: "config.tags" } using method: Hybrid
+2023-03-13T14:04:57.597+0000 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-13T14:04:57.598+0000 I  STORAGE  [repl-writer-worker-0] Index build initialized: 171bc072-8a53-489a-87b5-36c19d893957: config.tags (88d57bbe-e3d1-436e-9581-5d7be154e21b ): indexes: 1
+2023-03-13T14:04:57.598+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-13T14:04:57.602+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-13T14:04:57.605+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ns_1_min_1 on ns config.tags
+2023-03-13T14:04:57.611+0000 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: 171bc072-8a53-489a-87b5-36c19d893957: config.tags ( 88d57bbe-e3d1-436e-9581-5d7be154e21b ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2023-03-13T14:04:57.625+0000 I  INDEX    [repl-writer-worker-0] index build: starting on config.tags properties: { v: 2, key: { ns: 1, tag: 1 }, name: "ns_1_tag_1", ns: "config.tags" } using method: Hybrid
+2023-03-13T14:04:57.625+0000 I  INDEX    [repl-writer-worker-0] build may temporarily use up to 200 megabytes of RAM
+2023-03-13T14:04:57.625+0000 I  STORAGE  [repl-writer-worker-0] Index build initialized: 1b65d02f-2639-46e6-af31-eec253ef966b: config.tags (88d57bbe-e3d1-436e-9581-5d7be154e21b ): indexes: 1
+2023-03-13T14:04:57.625+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2023-03-13T14:04:57.627+0000 I  STORAGE  [repl-writer-worker-0] createCollection: config.version with provided UUID: d81b8cf0-bfde-4205-8a3a-b26ab8ee7f11 and options: { uuid: UUID("d81b8cf0-bfde-4205-8a3a-b26ab8ee7f11") }
+2023-03-13T14:04:57.628+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2023-03-13T14:04:57.638+0000 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index ns_1_tag_1 on ns config.tags
+2023-03-13T14:04:57.646+0000 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns config.version
+2023-03-13T14:04:57.647+0000 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: 1b65d02f-2639-46e6-af31-eec253ef966b: config.tags ( 88d57bbe-e3d1-436e-9581-5d7be154e21b ). Index specs built: 1. Indexes in catalog before build: 2. Indexes in catalog after build: 3
+2023-03-13T14:04:57.663+0000 I  STORAGE  [repl-writer-worker-0] createCollection: admin.system.keys with provided UUID: 8a3fa9ad-5efc-4207-83e6-53d314d03c88 and options: { uuid: UUID("8a3fa9ad-5efc-4207-83e6-53d314d03c88") }
+2023-03-13T14:04:57.684+0000 I  INDEX    [repl-writer-worker-0] index build: done building index _id_ on ns admin.system.keys
+2023-03-13T14:07:01.091+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2023-03-13T14:07:01.103+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-1] Refresh for collection config.system.sessions took 10 ms and found the collection is not sharded
+2023-03-13T14:07:01.103+0000 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-13T14:07:01.103+0000 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-13T14:09:29.455+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:57913 #14 (3 connections now open)
+2023-03-13T14:09:29.455+0000 I  NETWORK  [conn14] end connection 127.0.0.1:57913 (2 connections now open)
+2023-03-13T14:09:29.465+0000 I  REPL     [replication-1] Choosing new sync source because the config version supplied by localhost:27021, 2, does not match ours, 1
+2023-03-13T14:09:29.465+0000 I  REPL     [replication-1] Canceling oplog query due to OplogQueryMetadata. We have to choose a new sync source. Current source: localhost:27021, OpTime { ts: Timestamp(1678716569, 1), t: 1 }, its sync source index:-1
+2023-03-13T14:09:29.465+0000 W  REPL     [rsBackgroundSync] Fetcher stopped querying remote oplog with error: InvalidSyncSource: sync source localhost:27021 (config version: 2; last applied optime: { ts: Timestamp(1678716569, 1), t: 1 }; sync source index: -1; primary index: 0) is no longer valid
+2023-03-13T14:09:29.465+0000 I  REPL     [rsBackgroundSync] Clearing sync source localhost:27021 to choose a new one.
+2023-03-13T14:09:29.465+0000 I  REPL     [rsBackgroundSync] could not find member to sync from
+2023-03-13T14:09:29.467+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:57918 #16 (3 connections now open)
+2023-03-13T14:09:29.468+0000 I  REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27021: InvalidSyncSource: Sync source was cleared. Was localhost:27021
+2023-03-13T14:09:29.468+0000 I  NETWORK  [conn16] end connection 127.0.0.1:57918 (2 connections now open)
+2023-03-13T14:09:29.473+0000 I  REPL     [replexec-1] New replica set config in use: { _id: "myRepl", version: 2, configsvr: true, protocolVersion: 1, writeConcernMajorityJournalDefault: true, members: [ { _id: 0, host: "localhost:27021", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 2.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27022", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27023", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('640f2d7dd54f47b778949376') } }
+2023-03-13T14:09:29.473+0000 I  REPL     [replexec-1] This node is localhost:27022 in the config
+2023-03-13T14:09:29.475+0000 I  NETWORK  [conn7] end connection 127.0.0.1:51922 (1 connection now open)
+2023-03-13T14:09:29.476+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:57920 #18 (2 connections now open)
+2023-03-13T14:09:29.477+0000 I  NETWORK  [conn18] received client metadata from 127.0.0.1:57920 conn18: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:09:47.484+0000 I  REPL     [rsBackgroundSync] sync source candidate: localhost:27021
+2023-03-13T14:09:47.487+0000 I  REPL     [rsBackgroundSync] Changed sync source from empty to localhost:27021
+2023-03-13T14:12:01.091+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-2] Refresh for collection config.system.sessions took 0 ms and found the collection is not sharded
+2023-03-13T14:12:01.092+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2023-03-13T14:12:01.093+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-2] Refresh for collection config.system.sessions took 0 ms and found the collection is not sharded
+2023-03-13T14:12:01.093+0000 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-13T14:12:01.093+0000 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-13T14:17:01.092+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-3] Refresh for collection config.system.sessions took 1 ms and found the collection is not sharded
+2023-03-13T14:17:01.092+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2023-03-13T14:17:01.093+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-3] Refresh for collection config.system.sessions took 0 ms and found the collection is not sharded
+2023-03-13T14:17:01.093+0000 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-13T14:17:01.093+0000 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-13T14:19:07.478+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60592 #19 (3 connections now open)
+2023-03-13T14:19:07.480+0000 I  NETWORK  [conn19] received client metadata from 127.0.0.1:60592 conn19: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:19:07.493+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60597 #20 (4 connections now open)
+2023-03-13T14:19:07.493+0000 I  NETWORK  [conn20] received client metadata from 127.0.0.1:60597 conn20: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:19:08.073+0000 I  STORAGE  [repl-writer-worker-1] createCollection: config.mongos with provided UUID: c6f32de2-f98e-4177-95de-64009efc95d1 and options: { uuid: UUID("c6f32de2-f98e-4177-95de-64009efc95d1") }
+2023-03-13T14:19:08.095+0000 I  INDEX    [repl-writer-worker-1] index build: done building index _id_ on ns config.mongos
+2023-03-13T14:20:39.718+0000 I  NETWORK  [conn19] end connection 127.0.0.1:60592 (3 connections now open)
+2023-03-13T14:20:39.729+0000 I  NETWORK  [conn20] end connection 127.0.0.1:60597 (2 connections now open)
+2023-03-13T14:20:58.957+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60603 #21 (3 connections now open)
+2023-03-13T14:20:58.960+0000 I  NETWORK  [conn21] received client metadata from 127.0.0.1:60603 conn21: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:20:59.967+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60607 #22 (4 connections now open)
+2023-03-13T14:20:59.968+0000 I  NETWORK  [conn22] received client metadata from 127.0.0.1:60607 conn22: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:21:53.400+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60610 #23 (5 connections now open)
+2023-03-13T14:21:53.401+0000 I  NETWORK  [conn23] received client metadata from 127.0.0.1:60610 conn23: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:21:53.410+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60613 #24 (6 connections now open)
+2023-03-13T14:21:53.411+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60614 #25 (7 connections now open)
+2023-03-13T14:21:53.411+0000 I  NETWORK  [conn24] received client metadata from 127.0.0.1:60613 conn24: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:21:53.412+0000 I  NETWORK  [conn25] received client metadata from 127.0.0.1:60614 conn25: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:22:00.266+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60621 #26 (8 connections now open)
+2023-03-13T14:22:00.268+0000 I  NETWORK  [conn26] received client metadata from 127.0.0.1:60621 conn26: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:22:01.092+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-4] Refresh for collection config.system.sessions took 1 ms and found the collection is not sharded
+2023-03-13T14:22:01.093+0000 I  SH_REFR  [ConfigServerCatalogCacheLoader-4] Refresh for collection config.system.sessions took 0 ms and found the collection is not sharded
+2023-03-13T14:22:01.094+0000 I  CONTROL  [LogicalSessionCacheRefresh] Failed to create config.system.sessions: Cannot create config.system.sessions until there are shards, will try again at the next refresh interval
+2023-03-13T14:22:01.094+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2023-03-13T14:22:01.094+0000 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Cannot create config.system.sessions until there are shards
+2023-03-13T14:22:02.275+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60625 #27 (9 connections now open)
+2023-03-13T14:22:02.276+0000 I  NETWORK  [conn27] received client metadata from 127.0.0.1:60625 conn27: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:22:53.414+0000 I  NETWORK  [conn24] end connection 127.0.0.1:60613 (8 connections now open)
+2023-03-13T14:24:06.567+0000 I  NETWORK  [conn21] end connection 127.0.0.1:60603 (7 connections now open)
+2023-03-13T14:24:06.570+0000 I  NETWORK  [conn22] end connection 127.0.0.1:60607 (6 connections now open)
+2023-03-13T14:24:08.486+0000 I  NETWORK  [conn23] end connection 127.0.0.1:60610 (5 connections now open)
+2023-03-13T14:24:08.489+0000 I  NETWORK  [conn25] end connection 127.0.0.1:60614 (4 connections now open)
+2023-03-13T14:24:10.299+0000 I  NETWORK  [conn26] end connection 127.0.0.1:60621 (3 connections now open)
+2023-03-13T14:24:10.303+0000 I  NETWORK  [conn27] end connection 127.0.0.1:60625 (2 connections now open)
+2023-03-13T14:24:20.530+0000 I  COMMAND  [conn2] Received replSetStepUp request
+2023-03-13T14:24:20.531+0000 I  ELECTION [conn2] Starting an election due to step up request
+2023-03-13T14:24:20.531+0000 I  ELECTION [conn2] skipping dry run and running for election in term 2
+2023-03-13T14:24:20.534+0000 I  REPL     [replexec-14] Scheduling remote command request for vote request: RemoteCommand 2365 -- target:localhost:27021 db:admin cmd:{ replSetRequestVotes: 1, setName: "myRepl", dryRun: false, term: 2, candidateIndex: 1, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678717456, 1), t: 1 } }
+2023-03-13T14:24:20.535+0000 I  REPL     [replexec-14] Scheduling remote command request for vote request: RemoteCommand 2366 -- target:localhost:27023 db:admin cmd:{ replSetRequestVotes: 1, setName: "myRepl", dryRun: false, term: 2, candidateIndex: 1, configVersion: 2, lastCommittedOp: { ts: Timestamp(1678717456, 1), t: 1 } }
+2023-03-13T14:24:20.538+0000 I  ELECTION [replexec-16] VoteRequester(term 2) received an invalid response from localhost:27021: ShutdownInProgress: In the process of shutting down; response message: { operationTime: Timestamp(1678717456, 1), ok: 0.0, errmsg: "In the process of shutting down", code: 91, codeName: "ShutdownInProgress", $gleStats: { lastOpTime: Timestamp(0, 0), electionId: ObjectId('7fffffff0000000000000001') }, lastCommittedOpTime: Timestamp(1678717456, 1), $clusterTime: { clusterTime: Timestamp(1678717456, 1), signature: { hash: BinData(0, 0000000000000000000000000000000000000000), keyId: 0 } } }
+2023-03-13T14:24:20.540+0000 I  ELECTION [replexec-14] VoteRequester(term 2) received a yes vote from localhost:27023; response message: { term: 2, voteGranted: true, reason: "", ok: 1.0, $gleStats: { lastOpTime: Timestamp(0, 0), electionId: ObjectId('000000000000000000000000') }, lastCommittedOpTime: Timestamp(1678717456, 1), $clusterTime: { clusterTime: Timestamp(1678717456, 1), signature: { hash: BinData(0, 0000000000000000000000000000000000000000), keyId: 0 } }, operationTime: Timestamp(1678717456, 1) }
+2023-03-13T14:24:20.541+0000 I  ELECTION [replexec-14] election succeeded, assuming primary role in term 2
+2023-03-13T14:24:20.541+0000 I  REPL     [replexec-14] transition to PRIMARY from SECONDARY
+2023-03-13T14:24:20.541+0000 I  REPL     [replexec-14] Resetting sync source to empty, which was localhost:27021
+2023-03-13T14:24:20.543+0000 I  REPL     [replexec-14] Entering primary catch-up mode.
+2023-03-13T14:24:20.545+0000 I  REPL     [replexec-16] Member localhost:27021 is now in state SECONDARY
+2023-03-13T14:24:20.545+0000 I  REPL     [replexec-16] Caught up to the latest optime known via heartbeats after becoming primary. Target optime: { ts: Timestamp(1678717456, 1), t: 1 }. My Last Applied: { ts: Timestamp(1678717456, 1), t: 1 }
+2023-03-13T14:24:20.546+0000 I  REPL     [replexec-16] Exited primary catch-up mode.
+2023-03-13T14:24:20.546+0000 I  REPL     [replexec-16] Stopping replication producer
+2023-03-13T14:24:20.546+0000 I  REPL     [ReplBatcher] Oplog buffer has been drained in term 2
+2023-03-13T14:24:20.546+0000 I  REPL     [rsBackgroundSync] Replication producer stopped after oplog fetcher finished returning a batch from our sync source.  Abandoning this batch of oplog entries and re-evaluating our sync source.
+2023-03-13T14:24:20.546+0000 I  CONNPOOL [RS] Ending connection to host localhost:27021 due to bad connection status: CallbackCanceled: Callback was canceled; 1 connections to that host remain open
+2023-03-13T14:24:20.547+0000 I  REPL     [RstlKillOpThread] Starting to kill user operations
+2023-03-13T14:24:20.548+0000 I  REPL     [RstlKillOpThread] Stopped killing user operations
+2023-03-13T14:24:20.548+0000 I  REPL     [RstlKillOpThread] State transition ops metrics: { lastStateTransition: "stepUp", userOpsKilled: 0, userOpsRunning: 0 }
+2023-03-13T14:24:20.554+0000 I  SHARDING [Balancer] CSRS balancer is starting
+2023-03-13T14:24:20.555+0000 I  SHARDING [PeriodicShardedIndexConsistencyChecker] Checking consistency of sharded collection indexes across the cluster
+2023-03-13T14:24:20.555+0000 I  REPL     [rsSync-0] transition to primary complete; database writes are now permitted
+2023-03-13T14:24:20.557+0000 I  SHARDING [PeriodicShardedIndexConsistencyChecker] Found 0 collections with inconsistent indexes
+2023-03-13T14:24:20.557+0000 I  SHARDING [Balancer] CSRS balancer thread is recovering
+2023-03-13T14:24:20.558+0000 I  SHARDING [Balancer] CSRS balancer thread is recovered
+2023-03-13T14:24:21.296+0000 I  REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27021: InvalidSyncSource: Sync source was cleared. Was localhost:27021
+2023-03-13T14:24:21.538+0000 I  NETWORK  [conn2] end connection 127.0.0.1:51914 (1 connection now open)
+2023-03-13T14:24:22.303+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60631 #28 (2 connections now open)
+2023-03-13T14:24:22.304+0000 I  NETWORK  [conn28] received client metadata from 127.0.0.1:60631 conn28: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:24:22.309+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60632 #29 (3 connections now open)
+2023-03-13T14:24:22.310+0000 I  NETWORK  [conn29] received client metadata from 127.0.0.1:60632 conn29: { driver: { name: "NetworkInterfaceTL", version: "4.2.24" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-03-13T14:24:22.312+0000 I  TXN      [TransactionCoordinator] Need to resume coordinating commit for 0 transactions
+2023-03-13T14:24:22.312+0000 I  TXN      [TransactionCoordinator] Incoming coordinateCommit requests are now enabled
+2023-03-13T14:24:22.546+0000 W  NETWORK  [replexec-18] Failed to check socket connectivity: L’opération a réussi.
+2023-03-13T14:24:22.546+0000 I  CONNPOOL [replexec-18] dropping unhealthy pooled connection to localhost:27021
+2023-03-13T14:24:22.546+0000 I  CONNPOOL [Replication] Connecting to localhost:27021
+2023-03-13T14:24:22.767+0000 I  CONTROL  [thread20] CTRL_CLOSE_EVENT signal
+2023-03-13T14:24:22.767+0000 I  CONTROL  [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2023-03-13T14:24:22.768+0000 I  REPL     [consoleTerminate] Stepping down the ReplicationCoordinator for shutdown, waitTime: 10000ms
+2023-03-13T14:24:22.801+0000 I  REPL     [RstlKillOpThread] Starting to kill user operations
+2023-03-13T14:24:22.806+0000 I  REPL     [RstlKillOpThread] Stopped killing user operations
+2023-03-13T14:24:22.806+0000 I  REPL     [RstlKillOpThread] State transition ops metrics: { lastStateTransition: "stepDown", userOpsKilled: 0, userOpsRunning: 1 }
+2023-03-13T14:24:22.807+0000 I  REPL     [consoleTerminate] transition to SECONDARY from PRIMARY
+2023-03-13T14:24:22.832+0000 I  REPL     [consoleTerminate] Handing off election to localhost:27023
+2023-03-13T14:24:22.832+0000 I  SHARDING [consoleTerminate] Shutting down the WaitForMajorityService
+2023-03-13T14:24:22.833+0000 I  SHARDING [consoleTerminate] Shutting down the balancer
+2023-03-13T14:24:22.834+0000 I  SHARDING [Balancer] CSRS balancer is now stopped
+2023-03-13T14:24:22.834+0000 I  CONTROL  [consoleTerminate] Shutting down the LogicalSessionCache
+2023-03-13T14:24:22.834+0000 I  NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2023-03-13T14:24:22.835+0000 I  NETWORK  [consoleTerminate] Shutting down the global connection pool
+2023-03-13T14:24:22.835+0000 I  STORAGE  [consoleTerminate] Shutting down the FlowControlTicketholder
+2023-03-13T14:24:22.835+0000 I  -        [consoleTerminate] Stopping further Flow Control ticket acquisitions.
+2023-03-13T14:24:22.836+0000 I  STORAGE  [consoleTerminate] Shutting down the PeriodicThreadToAbortExpiredTransactions
+2023-03-13T14:24:22.836+0000 I  STORAGE  [consoleTerminate] Shutting down the PeriodicThreadToDecreaseSnapshotHistoryIfNotNeeded
+2023-03-13T14:24:22.836+0000 I  REPL     [consoleTerminate] Shutting down the ReplicationCoordinator
+2023-03-13T14:24:22.836+0000 I  REPL     [consoleTerminate] shutting down replication subsystems
+2023-03-13T14:24:22.837+0000 I  REPL     [consoleTerminate] Stopping replication reporter thread
+2023-03-13T14:24:22.837+0000 I  REPL     [consoleTerminate] Stopping replication fetcher thread
+2023-03-13T14:24:22.837+0000 I  REPL     [consoleTerminate] Stopping replication applier thread
+2023-03-13T14:24:23.551+0000 I  REPL     [rsSync-0] Finished oplog application
+2023-03-13T14:24:23.834+0000 I  REPL     [rsBackgroundSync] Stopping replication producer
+2023-03-13T14:24:23.834+0000 I  REPL     [consoleTerminate] Stopping replication storage threads
+2023-03-13T14:24:23.835+0000 I  ASIO     [RS] Killing all outstanding egress activity.
+2023-03-13T14:24:23.835+0000 I  ASIO     [RS] Killing all outstanding egress activity.
+2023-03-13T14:24:23.835+0000 I  CONNPOOL [RS] Dropping all pooled connections to localhost:27021 due to ShutdownInProgress: Shutting down the connection pool
+2023-03-13T14:24:23.837+0000 I  REPL     [replexec-18] replSetStepUp request to localhost:27023 failed due to CallbackCanceled: Callback canceled
+2023-03-13T14:24:23.837+0000 I  ASIO     [Replication] Killing all outstanding egress activity.
+2023-03-13T14:24:23.838+0000 I  SHARDING [consoleTerminate] Shutting down the PeriodicShardedIndexConsistencyChecker
+2023-03-13T14:24:23.838+0000 I  SHARDING [consoleTerminate] Shutting down the ShardingInitializationMongoD
+2023-03-13T14:24:23.838+0000 I  REPL     [consoleTerminate] Enqueuing the ReplicationStateTransitionLock for shutdown
+2023-03-13T14:24:23.838+0000 I  -        [consoleTerminate] Killing all operations for shutdown
+2023-03-13T14:24:23.838+0000 I  COMMAND  [consoleTerminate] Shutting down all open transactions
+2023-03-13T14:24:23.838+0000 I  REPL     [consoleTerminate] Acquiring the ReplicationStateTransitionLock for shutdown
+2023-03-13T14:24:23.838+0000 I  INDEX    [consoleTerminate] Shutting down the IndexBuildsCoordinator
+2023-03-13T14:24:23.839+0000 I  NETWORK  [consoleTerminate] Shutting down the ReplicaSetMonitor
+2023-03-13T14:24:23.839+0000 I  SHARDING [consoleTerminate] Shutting down the shard registry
+2023-03-13T14:24:23.839+0000 W  SHARDING [shard-registry-reload] cant reload ShardRegistry  :: caused by :: CallbackCanceled: Callback canceled
+2023-03-13T14:24:23.839+0000 I  ASIO     [shard-registry-reload] Killing all outstanding egress activity.
+2023-03-13T14:24:23.839+0000 I  REPL     [consoleTerminate] Shutting down the LogicalTimeValidator
+2023-03-13T14:24:23.839+0000 I  CONTROL  [consoleTerminate] Shutting down free monitoring
+2023-03-13T14:24:23.839+0000 I  CONTROL  [consoleTerminate] Shutting down free monitoring
+2023-03-13T14:24:23.839+0000 I  FTDC     [consoleTerminate] Shutting down full-time data capture
+2023-03-13T14:24:23.839+0000 I  FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2023-03-13T14:24:23.844+0000 I  STORAGE  [consoleTerminate] Shutting down the HealthLog
+2023-03-13T14:24:23.844+0000 I  STORAGE  [consoleTerminate] Shutting down the storage engine
+2023-03-13T14:24:23.844+0000 I  STORAGE  [consoleTerminate] Deregistering all the collections
+2023-03-13T14:24:23.844+0000 I  STORAGE  [WTOplogJournalThread] Oplog journal thread loop shutting down
+2023-03-13T14:24:23.844+0000 W  QUERY    [conn28] GetMore command executor error: FAILURE, status: InterruptedAtShutdown: interrupted at shutdown, stats: { stage: "COLLSCAN", nReturned: 2, executionTimeMillisEstimate: 0, works: 14, advanced: 2, needTime: 6, needYield: 0, saveState: 6, restoreState: 5, isEOF: 0, direction: "forward", docsExamined: 2 }
+2023-03-13T14:24:23.845+0000 I  STORAGE  [consoleTerminate] Timestamp monitor shutting down
+2023-03-13T14:24:23.845+0000 I  STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2023-03-13T14:24:23.845+0000 I  STORAGE  [consoleTerminate] Shutting down session sweeper thread
+2023-03-13T14:24:23.845+0000 I  STORAGE  [consoleTerminate] Finished shutting down session sweeper thread
+2023-03-13T14:24:23.845+0000 I  STORAGE  [consoleTerminate] Shutting down journal flusher thread
+2023-03-13T14:24:23.846+0000 I  STORAGE  [consoleTerminate] Finished shutting down journal flusher thread
+2023-03-13T14:24:23.846+0000 I  STORAGE  [consoleTerminate] Shutting down checkpoint thread
+2023-03-13T14:24:23.846+0000 I  STORAGE  [consoleTerminate] Finished shutting down checkpoint thread
+2023-03-13T14:24:23.883+0000 I  STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2023-03-13T14:24:23.883+0000 I  -        [consoleTerminate] Dropping the scope cache for shutdown
+2023-03-13T14:24:23.884+0000 I  CONTROL  [consoleTerminate] now exiting
+2023-03-13T14:24:23.884+0000 I  CONTROL  [consoleTerminate] shutting down with code:12
